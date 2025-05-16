@@ -1,0 +1,206 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Georgia', serif; /* Fuente más clásica */
+    line-height: 1.7;
+    color: #333;
+    background-color: #f0e6d6; /* Beige claro, evocando papel antiguo */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: #ffffff; /* Contenido sobre fondo blanco */
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; /* Fuente serif para títulos */
+    color: #6a0505; /* Rojo vino oscuro, muy barroco */
+    margin-bottom: 1.8rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Sombra sutil en el texto */
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    color: #8b0000; /* Rojo oscuro para el título principal */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid #b8860b; /* Línea dorada bajo los subtítulos */
+    padding-bottom: 0.8rem;
+    margin-top: 3.5rem;
+    color: #4a2d05; /* Marrón oscuro */
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: #4a2d05 !important; /* Marrón oscuro, fuerte y elegante */
+    box-shadow: 0 4px 8px rgba(0,0,0,.3); /* Sombra más oscura */
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffdead !important; /* Melocotón claro para el logo */
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: #ffd700 !important; /* Dorado al pasar el ratón */
+}
+
+.nav-link {
+    color: #ffdead !important; /* Melocotón claro para los enlaces */
+    font-weight: 600;
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ffd700 !important; /* Dorado al pasar el ratón */
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+}
+
+/* Estilos de Listas */
+ul {
+    padding-left: 1.5rem;
+}
+
+.list-unstyled li {
+    margin-bottom: 0.8rem;
+}
+
+.list-unstyled li::before {
+    content: "⚜️"; /* Icono de flor de lis, más decorativo */
+    color: #b8860b; /* Dorado */
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -1.5em;
+    font-size: 1.2em;
+}
+
+/* MODIFICADO: Aportaciones ahora usan guiones en lugar de checks */
+.contribution-list li::before {
+    content: "- "; /* Guion simple */
+    color: #4a2d05; /* Marrón oscuro para los guiones */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+/* Estilos para Texto Específico */
+.notable-work {
+    font-style: italic;
+    color: #8b0000; /* Rojo oscuro */
+    font-weight: 600;
+}
+
+/* Secciones de Contenido */
+section {
+    margin-bottom: 2.5rem;
+}
+
+.representative {
+    margin-bottom: 3.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px dashed #b8860b; /* Línea punteada dorada */
+    background-color: #fffaf0; /* Fondo crema para secciones */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05); /* Sombra interna sutil */
+}
+
+.representative:last-child {
+    border-bottom: none;
+    margin-bottom: 1.5rem;
+}
+
+/* Carrusel de Imágenes */
+.carousel-item img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border: 3px solid #b8860b; /* Borde dorado alrededor de las imágenes */
+}
+
+/* Página de Referencias */
+.reference-list li {
+    margin-bottom: 1.2rem;
+    line-height: 1.9;
+    padding-left: 2em;
+    text-indent: -2em;
+    color: #555;
+}
+
+.reference-list li a {
+    color: #007bff; /* Azul estándar para enlaces */
+    text-decoration: none;
+}
+
+.reference-list li a:hover {
+    text-decoration: underline;
+    color: #8b0000; /* Rojo oscuro al pasar el ratón */
+}
+
+/* Página de Índice */
+.index-section {
+    margin-bottom: 3rem;
+    padding: 2.5rem;
+    background-color: #fffaf0; /* Crema claro */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,.15); /* Sombra más definida */
+    border: 1px solid #b8860b; /* Borde dorado */
+}
+
+.index-section h2 {
+    color: #6a0505; /* Rojo vino oscuro */
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.index-link-list li {
+    margin-bottom: 1rem;
+}
+
+.index-link-list a {
+    font-size: 1.2rem;
+    color: #4a2d05; /* Marrón oscuro */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.index-link-list a:hover {
+    color: #8b0000; /* Rojo oscuro al pasar el ratón */
+    text-decoration: underline;
+    transform: translateX(5px); /* Efecto de desplazamiento */
+}
+
+/* Pie de página (ejemplo, puedes añadir uno si lo necesitas) */
+.footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: #4a2d05; /* Marrón oscuro */
+    color: #ffdead; /* Melocotón claro */
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 8px rgba(0,0,0,.2);
+}
